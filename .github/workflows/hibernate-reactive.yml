@@ -1,6 +1,7 @@
 name: Hibernate Reactive CI
 
 on:
+  workflow_dispatch:
   push:
     branches:
       # Pattern order matters: the last matching inclusion/exclusion wins
