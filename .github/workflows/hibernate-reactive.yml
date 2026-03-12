@@ -160,6 +160,7 @@ jobs:
             settings.pluginManagement {
               repositories {
                 mavenLocal()
+                gradlePluginPortal()
               }
             }
           }
