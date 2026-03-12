@@ -164,6 +164,11 @@ jobs:
               }
             }
           }
+          allprojects {
+            repositories {
+              mavenLocal()
+            }
+          }
           EOF
           ./gradlew classes testClasses \
             -PhibernateOrmVersion=${{ steps.orm-version.outputs.orm-version }} \
